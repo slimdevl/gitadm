@@ -31,13 +31,13 @@ if hash git 2>/dev/null && [ -e ${BDIR}/.git ]; then
   REVISION="$(git rev-parse --short HEAD)"
 fi
 
-LD_FLAGS="-s -w -X github.com/slimdevl/go-gitlab-client/pkg/build.Time=${BUILD_TIME} -X github.com/slimdevl/go-gitlab-client/pkg/build.Rev=${REVISION} -X github.com/slimdevl/go-gitlab-client/pkg/build.Tag=${TAG}"
+LD_FLAGS="-s -w -X github.com/slimdevl/gitlab/pkg/build.Time=${BUILD_TIME} -X github.com/slimdevl/gitlab/pkg/build.Rev=${REVISION} -X github.com/slimdevl/gitlab/pkg/build.Tag=${TAG}"
 
 
 mkdir -p ${BDIR}/bin/
 (
   env GOOS=${TARGET_OS} GOARCH=${TARGET_ARCH} CGO_ENABLED=0 go mod vendor
-  cd ${BDIR}/cmd
+  cd ${BDIR}
   case "${TARGET_OS}" in
       darwin*)
         machine=mac

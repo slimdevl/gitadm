@@ -1,4 +1,4 @@
-module github.com/slimdevl/go-gitlab-client
+module github.com/slimdevl/gitlab
 
 go 1.17
 

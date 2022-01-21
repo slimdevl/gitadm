@@ -5,7 +5,7 @@ import (
 	"os/user"
 	"path/filepath"
 
-	"github.com/slimdevl/go-gitlab-client/pkg/common"
+	"github.com/slimdevl/gitlab/pkg/common"
 	"gopkg.in/yaml.v2"
 )
 

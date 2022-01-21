@@ -8,17 +8,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/slimdevl/go-gitlab-client/pkg/build"
-	"github.com/slimdevl/go-gitlab-client/pkg/cmd"
-	"github.com/slimdevl/go-gitlab-client/pkg/common"
-	"github.com/slimdevl/go-gitlab-client/pkg/config"
-	"github.com/slimdevl/go-gitlab-client/pkg/context"
+	"github.com/slimdevl/gitlab/pkg/build"
+	"github.com/slimdevl/gitlab/pkg/cmd"
+	"github.com/slimdevl/gitlab/pkg/common"
+	"github.com/slimdevl/gitlab/pkg/config"
+	"github.com/slimdevl/gitlab/pkg/context"
 	"github.com/urfave/cli/v2"
 
 	// Auto-Import Command Sets
-	_ "github.com/slimdevl/go-gitlab-client/pkg/cmd/add"
-	_ "github.com/slimdevl/go-gitlab-client/pkg/cmd/describe"
-	_ "github.com/slimdevl/go-gitlab-client/pkg/cmd/remove"
+	_ "github.com/slimdevl/gitlab/pkg/cmd/add"
+	_ "github.com/slimdevl/gitlab/pkg/cmd/describe"
+	_ "github.com/slimdevl/gitlab/pkg/cmd/remove"
 )
 
 const banner = `Gitlab client`

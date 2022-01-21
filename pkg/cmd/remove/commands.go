@@ -1,7 +1,7 @@
 package add
 
 import (
-	"github.com/slimdevl/go-gitlab-client/pkg/cmd"
+	"github.com/slimdevl/gitlab/pkg/cmd"
 	"github.com/urfave/cli/v2"
 )
 

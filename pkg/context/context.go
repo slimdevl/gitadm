@@ -3,8 +3,8 @@ package context
 import (
 	"strings"
 
-	"github.com/slimdevl/go-gitlab-client/pkg/common"
-	"github.com/slimdevl/go-gitlab-client/pkg/config"
+	"github.com/slimdevl/gitlab/pkg/common"
+	"github.com/slimdevl/gitlab/pkg/config"
 	"github.com/urfave/cli/v2"
 )
 

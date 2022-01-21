@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/slimdevl/go-gitlab-client/pkg/scm"
-	"github.com/slimdevl/go-gitlab-client/pkg/util"
+	"github.com/slimdevl/gitlab/pkg/scm"
+	"github.com/slimdevl/gitlab/pkg/util"
 	"github.com/urfave/cli/v2"
 )
 
