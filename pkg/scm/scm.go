@@ -4,7 +4,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/slimdevl/gitlab/pkg/config"
+	"github.com/slimdevl/gitadm/pkg/config"
 	"github.com/xanzy/go-gitlab"
 )
 

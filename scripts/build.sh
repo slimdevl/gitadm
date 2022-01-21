@@ -31,7 +31,7 @@ if hash git 2>/dev/null && [ -e ${BDIR}/.git ]; then
   REVISION="$(git rev-parse --short HEAD)"
 fi
 
-LD_FLAGS="-s -w -X github.com/slimdevl/gitlab/pkg/build.Time=${BUILD_TIME} -X github.com/slimdevl/gitlab/pkg/build.Rev=${REVISION} -X github.com/slimdevl/gitlab/pkg/build.Tag=${TAG}"
+LD_FLAGS="-s -w -X github.com/slimdevl/gitadm/pkg/build.Time=${BUILD_TIME} -X github.com/slimdevl/gitadm/pkg/build.Rev=${REVISION} -X github.com/slimdevl/gitadm/pkg/build.Tag=${TAG}"
 
 
 mkdir -p ${BDIR}/bin/

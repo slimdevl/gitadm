@@ -1,4 +1,4 @@
-module github.com/slimdevl/gitlab
+module github.com/slimdevl/gitadm
 
 go 1.17
 

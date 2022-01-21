@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-APP_NAME := gitlab
+APP_NAME := gitadm
 
 menu: ## prints out the menu of command options
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(lastword $(MAKEFILE_LIST)) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
@@ -8,8 +8,7 @@ menu: ## prints out the menu of command options
 default: menu
 .PHONY: default
 
-#build: vendor build_mac build_linux build_windows build_docker ## build the app for all targets
-build: build_linux ## build the app for all targets
+build: build_mac build_linux build_windows ## build the app for all targets
 .PHONY: build
 
 build_mac: ## build the app for MacOS

@@ -1,7 +1,7 @@
 package add
 
 import (
-	"github.com/slimdevl/gitlab/pkg/cmd"
+	"github.com/slimdevl/gitadm/pkg/cmd"
 	"github.com/urfave/cli/v2"
 )
 

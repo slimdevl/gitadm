@@ -3,8 +3,8 @@ package context
 import (
 	"strings"
 
-	"github.com/slimdevl/gitlab/pkg/common"
-	"github.com/slimdevl/gitlab/pkg/config"
+	"github.com/slimdevl/gitadm/pkg/common"
+	"github.com/slimdevl/gitadm/pkg/config"
 	"github.com/urfave/cli/v2"
 )
 

@@ -7,7 +7,7 @@ var (
 )
 
 var (
-	ApplicationName        = "gitlab"
+	ApplicationName        = "gitadm"
 	ApplicationDescription = "a gitlab management cli"
 	AuthorName             = "slimdevl"
 	AuthorEmail            = "jb@slim.ai"

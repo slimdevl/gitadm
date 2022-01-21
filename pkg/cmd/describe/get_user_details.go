@@ -1,9 +1,9 @@
 package describe
 
 import (
-	"github.com/slimdevl/gitlab/pkg/errors"
-	"github.com/slimdevl/gitlab/pkg/scm"
-	"github.com/slimdevl/gitlab/pkg/util"
+	"github.com/slimdevl/gitadm/pkg/errors"
+	"github.com/slimdevl/gitadm/pkg/scm"
+	"github.com/slimdevl/gitadm/pkg/util"
 	"github.com/urfave/cli/v2"
 )
 
