@@ -1,6 +1,9 @@
 package describe
 
 import (
+	"fmt"
+	"strings"
+
 	"github.com/slimdevl/go-gitlab-client/pkg/scm"
 	"github.com/slimdevl/go-gitlab-client/pkg/util"
 	"github.com/urfave/cli/v2"
@@ -11,6 +14,14 @@ func getUserOrgMemberships(c *cli.Context) error {
 	if err != nil {
 		return err
 	}
-	util.PrettyPrint(details)
+	if !c.Bool("short") {
+		util.PrettyPrint(details)
+		return nil
+	}
+	paths := make([]string, len(details))
+	for i, org := range details {
+		paths[i] = fmt.Sprintf("gitlab.com/%s", org.Path)
+	}
+	util.Printf("%s\n", strings.Join(paths, ","))
 	return nil
 }
